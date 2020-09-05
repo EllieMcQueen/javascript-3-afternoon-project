@@ -40,9 +40,14 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  //Code Here 
+    let str = ''
+     for(let key in obj){
+       str = str + '' + obj[key]
+     }
+     return str
+  
 }
-
 
 
 ////////// PROBLEM 2 //////////
@@ -55,7 +60,14 @@ function showValues( obj ) {
 
 //Code Here
 
-
+function greaterThan10( obj ) {
+  for(let num in obj) {
+    if(obj[num] > 10) {
+      obj[num] = 0;
+    }
+  }
+  return obj; 
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -66,8 +78,12 @@ function showValues( obj ) {
 */
 
 //Code Here
-
-
+function double( obj ) {
+for(let twotimes in obj) { 
+  obj[twotimes] = obj[twotimes] * 2;
+}
+return obj;
+}
 
 ////////// PROBLEM 4 //////////
 
