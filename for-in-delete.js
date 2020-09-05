@@ -97,8 +97,15 @@ return obj;
 
 //Code Here
 
-
-
+function secrets( obj ) {
+  let str = ''
+  for(let key in obj) {
+    if(key.startsWith('sh')) {
+      str = str + '' + obj[key]
+    }
+  }
+  return str;
+}
 /* 
   Sometimes it's needed to delete object properties. 
   All you need is the word delete before a reference to the object property value. 
